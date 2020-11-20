@@ -1,0 +1,50 @@
+body
+{
+background-color: black;
+/* overflow-x: hidden !important; */
+}
+nav
+{
+    background-color: #2874F0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornsilk;
+    
+}
+.nav-item,
+.navbar-brand,
+.nav-link{
+    color: brown;
+}
+.form-row
+{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.form-group
+{
+    padding-left: 20px; 
+}
+.btn-primary
+{
+    margin-left: 20px;
+}
+.p{
+margin-right: 10px;
+}
+.nav-link
+{
+color: cornsilk;
+}
+.sign-in
+{
+    margin-left: 50%;
+    margin-right: 50%;
+    min-width: 150px;
+    margin-top: -15%;
+    z-index: +99999;
+    text-align: center;
+}
+.carousel img,.carousel
+{
+z-index: -99999;
+}
