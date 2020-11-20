@@ -208,7 +208,7 @@
 
     <script>
         var Transactions = {}
-
+        let bal = document.querySelector('#bankBalance').innerText; 
         function sendAmount(){
             const name = document.querySelector("#receiverName").value
             const email = document.querySelector("#receiverEmail").value
@@ -216,7 +216,7 @@
             
             let id = email.substring(0, email.indexOf("@"))
             const currentBalanceOfUser = parseInt(document.getElementById(id).innerText)
-            document.getElementById(id).innerText = currentBalanceOfUser + amount
+            document.getElementById(id).innerText = currentBalanceOfUser + amount;
 
             const transactionBody = document.querySelector("#transactionBody")
             var transaction = document.createElement('div');
@@ -224,6 +224,9 @@
             var node = `<p> <span id="receiver">${name}</span> received <span id="transactionAmount">${amount}</span> rupees from Arnab Poddar.</p>`
             transaction.innerHTML = node
             transactionBody.appendChild(transaction)
+
+            bal = bal- amount;
+            document.getElementById('bankBalance').innerText = bal;
         }
     </script>
     <a style="width: 100vw;" href="./internship.html"><button type="submit" class="btn btn-primary sign-in" >BACK</button></a>

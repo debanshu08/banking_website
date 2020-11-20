@@ -1,11 +1,11 @@
 h2{
-   margin-left: 37%;
     font-family: 'Big Shoulders Stencil Text', cursive;
     font-family: 'Goldman', cursive;
 
 }
-img
-{
-    margin-left: 46%;
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
     
